@@ -35,7 +35,7 @@ fn is_prime(n: u32) -> bool {
 
     let mut k = 1;
     // check whether n is divisible by numbers of the form `6k + 1` or `6k - 1` where *k* is a positive integer
-    // it starts with `k = 5` and iterates while the square of *k* is less than *n*
+    // it starts with `k = 1` and iterates while the square of *k* is less than *n*
     // the number *n* is not prime if it is divisible by either `6k + 1` or `6k - 1`.
     while (6 * k - 1) * (6 * k - 1) <= n {
         if n % (6 * k - 1) == 0 || n % (6 * k + 1) == 0 {
